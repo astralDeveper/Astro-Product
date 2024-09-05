@@ -1,0 +1,931 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+
+/* Anas's Style */
+.set-hero-image-div {
+    /* background-color: rgb(214, 214, 214) !important; */
+    /* position: relative; */
+    /* height: 500px !important; */
+}
+
+.set-hero-image {
+    /* background-color: red !important; */
+    /* top: 0% !important; */
+    /* top: -50% !important; */
+    /* position: absolute; */
+    width: 100% !important;
+    /* margin-top: -150px; */
+    /* top: -50%; */
+    animation: animate 1.5s linear infinite alternate;
+}
+
+
+
+@keyframes animate {
+    from {
+        transform: translateY(5px);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+
+.set-text {
+    font-size: 10px !important;
+}
+
+/* End */
+/* -----NAVBAR START */
+.HomePage_bg {
+    height: 100%;
+
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+    background-image: url(./duMsgj.png)
+}
+
+@media screen and (max-width:767px) {
+    .hero_p_small {
+        display: none !important;
+    }
+
+    .HomePage_bg {
+        height: 100%;
+    }
+
+    .set-hero-image-div {}
+
+    .her0_L {
+        margin-top: -30%;
+    }
+
+    .start_btn {
+        font-size: xx-small !important;
+        height: 30px !important;
+        width: 90px !important;
+    }
+
+    .c_btn {
+        border-radius: 50px;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #DD1C23;
+        /* background-color: transparent; */
+        /* font-family: "Roboto", sans-serif; */
+        color: white;
+        border: 3px solid #a30b12 !important;
+        font-size: xx-small !important;
+    }
+
+
+    .hero_P_SEC {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30% !important;
+    }
+
+    .red-sol {
+        /* margin-top: 10px; */
+        top: 100%;
+        left: 25%;
+    }
+
+    .her0_L h1 {
+
+        /* background-color: red; */
+        text-align: center;
+        width: 100%;
+        font-size: 5vh !important;
+    }
+
+    .hero_P_SEC p {
+        display: none !important;
+
+    }
+
+    .logo_web {
+        margin-left: -20px;
+        /* background: #000; */
+        /* background-color: red; */
+        height: auto;
+        width: 200px !important;
+    }
+}
+
+.logo_web {
+    /* background-color: red; */
+    height: auto;
+    /* width: 250px */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.nav-item a {
+
+    /* font-family: "Roboto", sans-serif; */
+    color: white !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-item {
+    margin-left: 40px;
+}
+
+.nav-item {
+    /* padding-left: 20px; */
+    position: relative;
+}
+
+.nav-item a::before {
+    content: "";
+    top: 90%;
+    left: 50%;
+    /* Center the left edge */
+    transform: translateX(-50%);
+    /* Center the pseudo-element */
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: #CA1821;
+    display: block;
+    transition: width 0.5s ease;
+}
+
+.nav-item:hover a::before {
+    width: 80%;
+    transition: width 0.5s ease;
+}
+
+.nav-btn {
+    border-radius: 0px 10px 0px 10px;
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    border: 2px solid #CA1821;
+    transition: .2s ease;
+}
+
+button:hover {
+    border-radius: 0px 10px 0px 10px;
+    height: 40px;
+    width: fit-content;
+    background-color: transparent;
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    border: 2px solid #CA1821;
+    transition: .2s ease;
+}
+
+.nav-btn:hover {
+    border-radius: 10px 0px 10px 0px;
+    height: 40px;
+    background-color: #dd1c2367;
+    width: 100px;
+    /* background-color: transparent; */
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    border: 2px solid #CA1821;
+}
+
+.navbar-toggler {
+    background-image: none;
+    width: fit-content;
+    padding: 2px !important;
+    /* Remove Bootstrap's default background image */
+    background: linear-gradient(174deg, #dd1c23a7 -4.36%, #CA1821 59.42%, #a00f146a 107.54%);
+    /* Add your desired background color */
+}
+
+/* -----NAVBAR END */
+/*---------------------------------HERO SECTION START---------------------- */
+@media screen and (max-width:767px) {
+    .her0_L {
+        margin-top: -100px !important;
+    }
+
+    .inputs-form input {
+        margin-bottom: 10px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+
+    .text-area {
+        margin: 0% auto !important;
+        width: 100% !important;
+    }
+
+    .footer_tbn {
+        border-radius: 10px 5px 10px 5px;
+        /* margin: 10px; */
+        border: 1px solid #000000;
+        width: 30% !important;
+        background-color: transparent;
+        height: 30px !important;
+        font-size: 10px !important;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .hero_P_SEC p {
+        /* background-color: red; */
+        width: 100% !important;
+        font-size: 2vh !important;
+    }
+
+    .her0_1 p {
+        display: none !important;
+    }
+
+    .her0_1 h1 {
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    .her0_3 p,
+    h5 {
+        display: none !important;
+    }
+
+    .her0_3_res {
+        /* background-color: red; */
+        width: 100% !important;
+        /* background-color: red; */
+        display: flex !important;
+    }
+
+    .her0_3_res h1 {
+        font-weight: bolder !important;
+        /* background-color: #222; */
+        width: 100%;
+        font-size: 25px !important;
+    }
+
+    .her0_3_btn-res {
+        margin-top: 0px !important;
+        /* background-color: rebeccapurple; */
+        width: 40% !important;
+    }
+
+    .vew_btn {
+        /* border-radius: 10px 0px 10px 0px; */
+        height: 30px !important;
+        width: 80px !important;
+        font-size: xx-small !important;
+
+        border: .4px solid #a30b12 !important;
+    }
+
+    .her0_3 {
+        margin-top: 50px !important;
+    }
+
+    .her0_4_card {
+        margin-bottom: 30px;
+    }
+
+
+    .her0_4_card {
+        /* padding-bottom: 20px !important; */
+        text-align: center;
+        /* margin-bottom: 10px; */
+        /* background-color: #222 !; */
+        border-radius: 10px !important;
+        padding: 10px !important;
+    }
+
+    .her0_4_card p {
+        font-size: 2vh !important;
+    }
+
+    .hero_5-main p {
+        display: none;
+    }
+
+    .hero_5-main img {
+        margin-top: 20px;
+        width: 250px !important;
+    }
+
+    .Her0_6 h1 {
+        text-align: center;
+        font-size: large;
+    }
+
+    .her0_6_P {
+        display: none !important;
+    }
+
+    .card-testi {
+        margin-top: 0px !important;
+        /* background-color: #CA1821 !important; */
+    }
+
+    .card_07 {
+        margin-bottom: 20px;
+        height: 200px !important;
+    }
+
+    .card_07_inner p {
+        padding: 0px !important;
+        width: 100% !important;
+        font-size: xx-small !important;
+    }
+
+    .Fotter_sec h1 {
+        text-align: center;
+        margin-top: 30px !important;
+        /* padding-top: 30px !important; */
+        padding: 0px !important;
+    }
+
+    .input_div_footer {
+        margin: 10px !important;
+    }
+
+    .input_div_footer input {
+        padding-left: 20px !important;
+    }
+
+    .footer_tbn {
+        border-radius: 10px 5px 10px 5px;
+        margin: 10px;
+        border: 1px solid #CA1821;
+        width: 90px;
+        background-color: transparent;
+        height: 30px;
+        font-size: 2vh;
+        text-align: center;
+        color: white;
+    }
+}
+
+
+.her0_L {
+    /* display: flex ju; */
+    height: 270px;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+        /* Adjust the distance as needed */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.her0_L img {
+    transition: moveUpDown 5s infinite;
+}
+
+.her0_L h1,
+h2 {
+    font-size: 7vh;
+}
+
+.red-sol {
+    background: linear-gradient(174deg, #DD1C23 -4.36%, #CA1821 59.42%, #A00F15 107.54%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.red-sol {
+    /* font-size: xx-small; */
+    /* top: 0%; */
+    width: fit-content;
+    position: absolute;
+
+}
+
+
+
+
+/* _-----------------------------------HERO SECTION END---------------------- */
+
+
+/* _-----------------------------------HERO P SECTION START---------------------- */
+.hero_P_SEC {
+    margin-top: 40PX;
+}
+
+.hero_P_SEC p {
+    font-size: small;
+}
+
+.hero_P_SEC .start_btn {
+    border-radius: 0px 10px 0px 10px;
+    height: 40px;
+    width: 22vh;
+    background-color: transparent;
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    border: 2px solid #CA1821;
+}
+
+.hero_P_SEC .c_btn {
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    background-color: #DD1C23;
+    /* background-color: transparent; */
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    border: 7px solid #a30b12;
+}
+
+.rotate-icon {
+
+    transform: rotate(90deg);
+}
+
+
+/* _-----------------------------------HERO P SECTION ENB---------------------- */
+
+/* _-----------------------------------HERO 3 START---------------------- */
+.her0_3 {
+    margin-top: 150px;
+}
+
+.hero_3_div {
+    width: fit-content;
+    position: relative;
+    /* background-color: #101010; */
+}
+
+.her0_3 h5 {
+    /* font-family: "Roboto", sans-serif !important; */
+    color: #CA1821 !important;
+}
+
+.her0_3 h5::before {
+    margin-right: 5px;
+    content: "";
+    width: 12px;
+    position: absolute;
+    height: 2px;
+    top: 40%;
+    right: 100%;
+    background-color: #CA1821;
+    /* background-color:; */
+}
+
+.her0_3 h5::after {
+    margin-left: 5px;
+    content: "";
+    width: 12px;
+    position: absolute;
+    height: 2px;
+    top: 40%;
+    left: 100%;
+    background-color: #CA1821;
+    /* background-color: red; */
+}
+
+.her0_3 p {
+    font-size: small;
+}
+
+.her0_3 .vew_btn {
+    border-radius: 10px 0px 10px 0px;
+    height: 45px;
+    width: 120px;
+    background-color: transparent;
+    /* background-color: transparent; */
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    border: 3px solid #a30b12;
+}
+
+.her0_3 .vew_btn:hover {
+    border-radius: 10px 0px 10px 0px;
+    height: 45px;
+    width: 120px;
+    background-color: transparent;
+    /* background-color: transparent; */
+    /* font-family: "Roboto", sans-serif; */
+    color: white;
+    border: 3px solid #a30b12;
+}
+
+
+/* _-----------------------------------HERO 3 END---------------------- */
+
+
+/* _-----------------------------------HERO 4 START---------------------- */
+.her0_4 img {
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+.her0_4_card h2 {
+    font-size: 25px;
+}
+
+.her0_4_card p {
+    font-size: 15px;
+}
+
+.her0_4_card {
+    height: 250px;
+    padding: 30px;
+    border-radius: 40px 5px 40px 5px;
+    border: .3px solid rgba(255, 255, 255, 0.331);
+}
+
+
+/* .hero_card_inenr  */
+
+/* _-----------------------------------HERO 4 END---------------------- */
+/* _-----------------------------------HERO 5 SATRT---------------------- */
+.Her0_5_section {
+    background-image: url('./Hero_5/Rectangle\ 12.png');
+    background-position: center top;
+    background-size: cover;
+    background-color: #000000;
+    height: 100%;
+
+}
+
+.hero_5-main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.h5_div {
+    position: relative;
+    width: fit-content;
+    margin-left: 17px;
+}
+
+.h5_div h5 {
+    font-weight: 400;
+    color: #CA1821;
+}
+
+.h5_div h5::before {
+    margin-right: -15px;
+    content: "";
+    width: 10px;
+    height: 2px;
+    top: 50%;
+    position: absolute;
+    right: 0%;
+    background-color: #CA1821;
+}
+
+.h5_div h5::after {
+    position: absolute;
+    content: "";
+    margin-left: -15px;
+    width: 10px;
+    height: 2px;
+    top: 50%;
+    left: 0%;
+    background-color: #CA1821;
+}
+
+.rating h1 {
+    color: #CA1821;
+    font-weight: bolder !important;
+}
+
+.rating p {
+    font-size: xx-small !important;
+}
+
+.hero_5-main img {
+    width: 70%;
+}
+
+/* _-----------------------------------HERO 5 END---------------------- */
+/* _-----------------------------------HERO 6 START---------------------- */
+.poinyts {
+    margin-top: 50px;
+}
+
+.poinyts p {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.f_4_inputs input {
+    border-radius: 10px 5px 10px 5px;
+    margin: 10px;
+    border: .3px solid rgba(255, 255, 255, 0.244);
+    width: 40%;
+    background-color: transparent;
+    height: 60px;
+    text-align: center;
+    color: white;
+}
+
+.f_4_inputs :nth-child(5) {
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 10px 5px 10px 5px;
+    margin: 10px;
+    border: .3px solid rgba(255, 255, 255, 0.244);
+    width: 40%;
+    background-color: transparent;
+    height: 60px;
+    text-align: start;
+    color: white;
+    overflow: auto;
+    height: 150px;
+    width: 83%;
+}
+
+.form_btn {
+    border-radius: 10px 5px 10px 5px;
+    margin: 10px;
+    border: 3px solid #CA1821;
+    width: 120px;
+    background-color: transparent;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+
+/* _-----------------------------------HERO 6 END---------------------- */
+/* _-----------------------------------HERO 7 START---------------------- */
+
+
+.card-testi {
+    margin-top: -200px !important;
+}
+
+/* .card-testi p {
+    text-align: center;
+    font-size: small;
+    padding: 50px;
+} */
+
+/*  */
+.set-card-bottom {
+    margin-top: -200px !important;
+}
+
+.hover-card {
+    transition: 0.5s ease-in-out !important;
+    width: 320px !important;
+}
+
+.set-child-card:hover {
+    background-color: #CA1821 !important;
+    transition: 0.3s ease-in;
+}
+
+.set-child-card:hover .rotate-commas-left {
+    display: block !important;
+}
+
+.set-child-card:hover .comma2 {
+    display: block !important;
+}
+
+.set-child-card:hover .comma1 {
+    display: block !important;
+}
+
+.set-child-card:hover .rotate-commas {
+    display: block !important;
+}
+
+.set-child-card:hover .removeImage {
+    opacity: 0;
+    transition: 0.3s ease-out !important;
+}
+
+.set-text {
+    /* background-color: orange !important; */
+    width: 100%;
+}
+
+.removeImage {
+    object-fit: cover;
+}
+
+.commas-div {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.commas {
+    width: 10% !important;
+    height: 10% !important;
+    position: absolute !important;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 20%;
+    opacity: 0.5;
+}
+
+.comma1 {
+    width: 35px !important;
+    top: 100% !important;
+    left: 100% !important;
+    right: px !important;
+    transform: rotate(180deg);
+    margin-top: -80px;
+    margin-left: -50px;
+}
+
+.comma2 {
+    width: 35px !important;
+    margin-left: 5%;
+}
+
+.set-child-card:hover .removeText {
+    display: block !important;
+    font-size: 12px;
+}
+
+/*  */
+.card_07_inner h1 {
+    padding-top: 20px;
+    color: #A00F15 !important;
+}
+
+.card_07_inner img {
+    border-radius: 50px;
+    width: 70px;
+    border: 3px solid #CA1821;
+    height: 70px
+}
+
+.card_07 {
+    background-color: rgb(35, 35, 35);
+    height: 400px;
+    /* width: 50%; */
+    text-align: center;
+    width: 300px !important;
+    border: 3px solid #a30b12;
+}
+
+
+
+/* _-----------------------------------HERO 7 END---------------------- */
+/* _-----------------------------------HERO 8 START---------------------- */
+.card-main-div {
+    /* padding: 30px; */
+    width: 350px;
+}
+
+.card-bg1 h1 {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./Hero_9/Rectangle\ 159.png');
+    /* width; */
+    background-color: red;
+}
+
+.text-div {
+    padding: 20px;
+}
+
+.text-div p {
+    font-size: small;
+}
+
+.tag-div {
+    right: 0%;
+    top: 90%;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: #a30b12;
+}
+
+
+/* _-----------------------------------HERO 8 END---------------------- */
+/* _-----------------------------------FOOTER START---------------------- */
+.Fotter_sec {
+    background-color:
+        #292929;
+    height: 100%;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.input_div_footer {
+    height: 80px;
+    background-color: #222;
+}
+
+.input_div_footer input {
+    height: 40px;
+    width: 55%;
+    border: none;
+    background: transparent;
+}
+
+.footer_tbn {
+    border-radius: 10px 5px 10px 5px;
+    margin: 10px;
+    border: 1px solid #CA1821;
+    width: 120px;
+    background-color: transparent;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+
+.p_div p {
+    color: white;
+}
+
+.input_div_footer i {
+    color: white;
+}
+
+.line {
+    width: 70%;
+
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+}
+
+
+/* _-----------------------------------FOOTER END---------------------- */
+.loader-inner {
+    position: absolute;
+}
+
+.loader-inner video {
+    width: 80vh;
+
+}
+
+.loader {
+    top: -20%;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media only screen and (max-width: 768px) {
+    .card-testi {
+        margin-top: 0 !important;
+    }
+
+    .comma1,
+    .comma2 {
+        /* margin: 20px; */
+        /* margin-left: 30px; */
+        width: 20px !important;
+    }
+
+    .comma2 {
+        margin-top: 5px !important;
+    }
+
+    .comma1 {
+        margin-top: -30px;
+    }
+
+    .card_07_inner p {
+
+        width: 70% !important;
+    }
+}

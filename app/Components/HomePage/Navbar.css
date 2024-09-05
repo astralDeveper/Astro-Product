@@ -1,0 +1,12 @@
+.cartImage{
+position: relative;
+} 
+.cartCount{
+position: absolute;
+top: 0;
+font-size: 12px;
+background: #000;
+padding: 3px 8px 3px 8px;
+border-radius: 100%;
+right: 0;
+}

@@ -1,0 +1,49 @@
+.Service_card h2 {
+    font-size: larger !important
+}
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Service_card p {
+    font-size: small;
+}
+
+.Service_card img {
+    margin-bottom: 10px;
+}
+
+.her0_4_card {
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.her0_4_card:hover {
+    transform: scale(.9);
+    background-color: rgba(86, 18, 18, 0.781);
+}
+
+@media screen and (max-width:767px) {
+    .services h1 {
+        font-size: 6vh !important;
+        width: 100% !important;
+
+    }
+
+    .services p {
+        font-size: 2vh;
+        width: 80% !important;
+    }
+
+    .service-offer h1 {
+        font-size: 5vh;
+    }
+
+    .service-offer p {
+
+        font-size: 2vh;
+        width: 80% !important;
+    }
+}

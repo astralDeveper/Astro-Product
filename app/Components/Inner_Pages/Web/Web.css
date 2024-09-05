@@ -1,0 +1,80 @@
+.Web_card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0.045) !important;
+    border-radius: 10px !important;
+}
+
+.Web_card img {
+    width: 50px !important;
+}
+
+.cards-web h1 {
+    /* font-family: "Roboto", sans-serif; */
+    color: rgb(154, 8, 8);
+    font-size: 50px;
+}
+
+.cards-web p {
+
+    font-size: medium;
+}
+
+.cards-web {
+    /* background-color: orange; */
+    width: 50%;
+    /* background-color: red; */
+}
+
+.cards-web>div {
+    /* background-color: red; */
+    width: 50%;
+}
+
+.App_dev {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.App_dev h1 {
+    font-size: xx-large !important;
+}
+
+.App_dev p {
+    font-size: 12px !important;
+}
+
+@media screen and (max-width:767px) {
+    .App_1 p {
+        display: none;
+
+    }
+
+    .App_1 h1 {
+        margin-bottom: -20px !important;
+        margin-top: 50px;
+        text-align: start !important;
+        width: 100% !important;
+        font-size: 20px;
+    }
+
+    .her0_4_card {
+        margin-top: 0% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .cards-web {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        /* background-color: orange; */
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .cards-web>div {
+        /* background-color: red; */
+        width: 100%;
+    }
+}

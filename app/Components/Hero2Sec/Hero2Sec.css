@@ -1,0 +1,63 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+.hero2-sec {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0c0c0cf0;
+}
+
+.img-div {
+    width: 30%;
+    height: 70px;
+    border: .1px solid rgba(255, 255, 255, 0.144);
+
+}
+
+.img1 {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./HeroSec_Img/image\ 6.png');
+}
+
+.img2 {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./HeroSec_Img/image\ 5.png');
+}
+
+.img3 {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./HeroSec_Img/image\ 7.png');
+}
+
+.img4 {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./HeroSec_Img/image\ 8.png');
+}
+
+.img5 {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./HeroSec_Img/image\ 9.png');
+}
+
+.img6 {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./HeroSec_Img/image.png');
+}
