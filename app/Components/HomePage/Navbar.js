@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import Link from "next/link";
-import logo1 from "./Logo (1).gif";
 import cart from "./cart.svg";
 import "./Navbar.css";
 
