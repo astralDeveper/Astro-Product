@@ -77,7 +77,7 @@ function Footer() {
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-5 col-sm-12 col-md-12 d-flex justify-content-center align-items-end'>
-                        <p className='text-white fw-lighter'>@2024 Astero Solutions.All Right Reverse</p>
+                        <p className='text-white fw-lighter'>@2024 Security Technical Management. All Rights Reserved</p>
                     </div>
                     <div className='col-lg-2 col-sm-12 col-md-12 d-flex justify-content-center align-items-end'>
                         <img src={logoFooter.src} className='w-50' />

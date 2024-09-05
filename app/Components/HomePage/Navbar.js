@@ -8,7 +8,7 @@ function Navbar(props) {
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
-        <div className="container">
+        <div className="container mb-5">
           <Link href={"/"}>
             <span className="navbar-brand">
               {/* <video
@@ -21,7 +21,7 @@ function Navbar(props) {
                 <source src={logo1.src} type="video/webm" />
                 Your browser does not support the video tag.
               </video> */}
-              <img src="/logo192.png" />
+              <img src="/logo192.png" style={{ height: '100px'}} />
             </span>
           </Link>
           <button
@@ -36,7 +36,7 @@ function Navbar(props) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="navbar-collapse collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav mb-5 mb-lg-0 w-100 justify-content-end">
               <li className="nav-item">
                 <span className="nav-link active" aria-current="page">
                   <Link href={"/"} style={{ textDecoration: "none" }}>
