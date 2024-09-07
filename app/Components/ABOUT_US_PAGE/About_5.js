@@ -6,7 +6,7 @@ function About_5() {
     return (
         <>
             <HomePagetS />
-            <section className='About_5_sec'>
+            <section className='About_5_sec my-40'>
 
                 <HomePagetS2 />
             </section>

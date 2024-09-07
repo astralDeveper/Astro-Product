@@ -3,6 +3,9 @@ import styles from './About.module.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 import React, { useState, useEffect } from 'react';
 
@@ -42,6 +45,20 @@ const AboutCard = () => {
     ],
   };
 
+  //   ------AOS Scroll Animtion--------
+
+useEffect(() => {
+  AOS.init({
+    // Optional settings:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+}, []);
 
   return (
     <div className={`${styles.contmain} text-white min-h-screen`}>
@@ -54,7 +71,7 @@ const AboutCard = () => {
 
                 <div className="row">
                   {/* Large screens (>=992px) */}
-                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`}>
+                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`} data-aos="flip-left">
                     <h3 className={`${styles.cardheading}  font-bold text-[#E50914] mb-4`} >'22</h3>
                     <div>
                       <div className={`${styles.bottomline}`}></div>
@@ -67,7 +84,7 @@ const AboutCard = () => {
                     </div>
 
                   </div>
-                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`}>
+                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`} data-aos="flip-left">
                     <h3 className={`${styles.cardheading}  font-bold text-[#E50914] mb-4`}>'21</h3>
                     <div>
                       <div className={`${styles.bottomline}`}></div>
@@ -79,7 +96,7 @@ const AboutCard = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`}>
+                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`}data-aos="flip-left">
                     <h3 className={`${styles.cardheading}  font-bold text-[#E50914] mb-4`}>'20</h3>
                     <div>
                       <div className={`${styles.bottomline}`}></div>
@@ -90,7 +107,7 @@ const AboutCard = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`}>
+                  <div className={`${styles.mainCard} col-lg-3 col-md-6 col-sm-12`} data-aos="flip-left">
                     <h3 className={`${styles.cardheading}  font-bold text-[#E50914] mb-4`}>'19</h3>
                     <div>
                       <div className={`${styles.bottomline}`}></div>

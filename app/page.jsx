@@ -18,7 +18,7 @@ function HomePage() {
         <>
             <section className='HomePage_bg'>
 
-                <Navbar items={selector.length}/>
+                <Navbar items={selector.length} />
                 <HeroSec />
             </section>
             <section className='hero2-sec'>

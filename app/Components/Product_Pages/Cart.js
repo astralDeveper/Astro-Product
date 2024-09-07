@@ -110,7 +110,7 @@ function Cart() {
                                 {getStarRating(item.star)}
                               </div>
                             </div>
-                            <div className="mt-1 mb-0 text-muted small">
+                            {/* <div className="mt-1 mb-0 text-muted small">
                               <span className="text-white">100% cotton</span>
                               <span className="text-primary"> • </span>
                               <span className="text-white">Light weight</span>
@@ -123,7 +123,7 @@ function Cart() {
                               <span className="text-white">For men</span>
                               <span className="text-primary"> • </span>
                               <span className="text-white">Casual<br /></span>
-                            </div>
+                            </div> */}
                             <p className="text-truncate mb-4 mb-md-0">
                               {item.description}
                             </p>

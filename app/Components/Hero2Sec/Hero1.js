@@ -7,6 +7,10 @@ import i5 from './HeroSec_Img/image 9.png'
 import i6 from './HeroSec_Img/image.png'
 import './Hero2Sec.css'
 import { useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 function Hero1() {
     const [count, setCount] = useState(0);
     const [projCounting, setProjCounting] = useState(0);
@@ -55,11 +59,27 @@ function Hero1() {
             }
         };
     }, []);
+
+    //   ------AOS Scroll Animtion--------
+
+useEffect(() => {
+    AOS.init({
+      // Optional settings:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+  }, []);
+
     return (
         <>
             <div className='container pt-lg-5' ref={containerRef}>
                 <div className='row mt-lg-5'>
-                    <div className=' hero1_img-div col-lg-8 col-sm-12 col-md-12 mt-5 order-lg-1 order-2'>
+                    <div className=' hero1_img-div col-lg-8 col-sm-12 col-md-12 mt-5 order-lg-1 order-2' data-aos="fade-right">
                         <div className='d-flex justify-content-evenly align-items-center '>
                             {/* <img src={i1} /> */}
                             <div className='img-div img1'>
@@ -90,7 +110,9 @@ function Hero1() {
                         </div>
 
                     </div>
-                    <div className='col-lg-4 mt-5 mt-lg-0  her0_1 col-sm-12 col-md-12 d-flex justify-content-center align-items-center order-1'>
+
+                    <div className='col-lg-4 mt-5 mt-lg-0  her0_1 col-sm-12 col-md-12 d-flex justify-content-center align-items-center order-1' data-aos="fade-left">
+                    
                         <div className=''>
                             <h1 className='text-white'>
                                 Trusted By {count}+ Worlds Leading

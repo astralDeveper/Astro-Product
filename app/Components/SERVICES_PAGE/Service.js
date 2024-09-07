@@ -56,7 +56,7 @@ function Service() {
           <div className="container">
             <div className="row">
               <div className="col-12 services  d-flex justify-content-center align-items-center flex-column">
-                <h1 className="w-75  text-white text-center">
+                <h1 className="w-55  text-white text-center">
                   Explore Our Services
                 </h1>
                 <p className="w-50 text-white text-center fw-lighter">
@@ -70,7 +70,7 @@ function Service() {
             </section>
             <div className="container pt-lg-5">
           <div className="row my-lg-5">
-            <div className="col-lg-12 col-sm-12 col-md-12 my-5 d-flex service-offer  justify-content-center align-items-center flex-column">
+            <div className="col-lg-12 col-sm-12 col-md-12 my-1 d-flex service-offer  justify-content-center align-items-center flex-column">
               <h1 className="text-white text-center">Services We Offer</h1>
               <p className="text-white fw-lighter text-center w-50">
                 Transform your digital vision into reality with our expert
