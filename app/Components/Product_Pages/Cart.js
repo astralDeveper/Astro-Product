@@ -193,7 +193,7 @@ function Cart() {
                         <p className="text-white">{item.description}</p>
                       </div>
                       <div className="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                        <a href={item.downloadLink} download className="btn btn-outline-primary w-100">Download</a>
+                        <a href={item.downloadLink} target="_blank" className="btn btn-outline-primary w-100">Download</a>
                       </div>
                     </div>
                   </div>
