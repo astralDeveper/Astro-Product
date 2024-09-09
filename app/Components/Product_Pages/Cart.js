@@ -161,7 +161,7 @@ function Cart() {
         </div>
 
         {selector.length > 0 && (
-          <div className="container mt-5">
+          <div className="container my-5">
             <div className="row justify-content-center">
               <div className="col-md-8 col-lg-6">
                 <div className="card bg-transparent p-4 border">
@@ -185,7 +185,7 @@ function Cart() {
             <div className="row gx-4 gy-4">
               {selector.length > 0 && selector.map((item, index) => (
                 <div key={index} className="w-50">
-                  <div className="card border shadow-0">
+                  <div className="card bg-transparent border shadow-0">
                     <Image src={item.image} width={400} height={400} className="card-img-top rounded-2 h-50 object-fit-cover w-full h-full" alt={item.title} />
                     <div className="card-body d-flex flex-column pt-3 border-top">
                       <strong className="text-white">{item.title}</strong>
@@ -341,10 +341,12 @@ function PaypalBtn({ amount, cart, setTransactionCompleted }) {
           input: {
             "font-size": "inherit",
             "font-family": "inherit",
-            "color": "#444",
-            "padding": "1rem",
+            "color": "#eee",
+            "padding": "0.75rem",
             "border-radius": "0.25rem",
             "width": "100%",
+            "border": "1px solid gold",
+            "background": "transparent"
           },
           ".invalid": { color: "red" },
         }}
@@ -398,6 +400,7 @@ const SubmitPayment = ({ isPaying, setIsPaying, billingAddress }) => {
   return (
     <button className="btn btn-primary d-block mx-auto px-5" onClick={handleClick} disabled={isPaying}>
       {isPaying && <span className="spinner-border spinner-border-sm" aria-hidden="true"></span>}
+      {' '}
       <span role="status">Pay</span>
     </button>
   );

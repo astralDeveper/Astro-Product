@@ -7,8 +7,6 @@ export async function POST(req) {
     const { cart } = res;
     const { jsonResponse, httpStatusCode } = await createOrder(cart);
 
-    console.log(jsonResponse);
-    
     return Response.json({
       status: httpStatusCode,
       data: jsonResponse,
@@ -21,7 +19,7 @@ export async function POST(req) {
 
 async function createOrder(cart) {
   // use the cart information passed from the front-end to calculate the purchase unit details
-  console.log("shopping cart information passed from the frontend createOrder() callback:", cart);
+  // console.log("shopping cart information passed from the frontend createOrder() callback:", cart);
 
   const accessToken = await generateAccessToken();
   const url = `${PAYPAL_URI}/v2/checkout/orders`;
